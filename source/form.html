@@ -71,32 +71,45 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__item color">
+          <fieldset class="form__item form__item--type">
+            <legend class="form__legend">Тип</legend>
+            <ul class="form__list order-list">
+              <li class="order-list__item order-list__item--type">
+                <input class="order-list__radio order-list__radio--type" type="radio" name="type" id="accessory" checked>
+                <label class="order-list__radio-checkbox-label order-list__radio-checkbox-label--radio" for="accessory">Аксессуар для интерьера</label>
+              </li>
+              <li class="order-list__item order-list__item--type">
+                <input class="order-list__radio order-list__radio--type" type="radio" name="type" id="kinder-toy">
+                <label class="order-list__radio-checkbox-label order-list__radio-checkbox-label--radio" for="kinder-toy">Детская игрушка</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__item form__item--color">
             <legend class="form__legend">Цвет</legend>
-            <ul class="color__list">
-              <li class="color__item">
-                <input class="color__input color__input--checked" type="checkbox" name="white" id="white" checked>
-                <label class="color__value" for="white">Белый</label>
+            <ul class="form__list order-list">
+              <li class="order-list__item order-list__item--color">
+                <input class="order-list__checkbox order-list__checkbox--color" type="checkbox" name="white" id="white" checked>
+                <label class="order-list__radio-checkbox-label order-list__radio-checkbox-label--checkbox" for="white">Белый</label>
               </li>
-              <li class="color__item">
-                <input class="color__input color__input--checked" type="checkbox" name="gray" id="gray" checked>
-                <label class="color__value" for="gray">Серый</label>
+              <li class="order-list__item order-list__item--color">
+                <input class="order-list__checkbox order-list__checkbox--color" type="checkbox" name="gray" id="gray" checked>
+                <label class="order-list__radio-checkbox-label order-list__radio-checkbox-label--checkbox" for="gray">Серый</label>
               </li>
-              <li class="color__item">
-                <input class="color__input" type="checkbox" name="tiffany" id="tiffany">
-                <label class="color__value" for="tiffany">«Тиффани»</label>
+              <li class="order-list__item order-list__item--color">
+                <input class="order-list__checkbox order-list__checkbox--color" type="checkbox" name="tiffany" id="tiffany">
+                <label class="order-list__radio-checkbox-label order-list__radio-checkbox-label--checkbox" for="tiffany">«Тиффани»</label>
               </li>
-              <li class="color__item">
-                <input class="color__input" type="checkbox" name="black" id="black">
-                <label class="color__value" for="black">Чёрный</label>
+              <li class="order-list__item order-list__item--color">
+                <input class="order-list__checkbox order-list__checkbox--color" type="checkbox" name="black" id="black">
+                <label class="order-list__radio-checkbox-label order-list__radio-checkbox-label--checkbox" for="black">Чёрный</label>
               </li>
-              <li class="color__item">
-                <input class="color__input" type="checkbox" name="pink" id="pink">
-                <label class="color__value" for="pink">Розовый</label>
+              <li class="order-list__item order-list__item--color">
+                <input class="order-list__checkbox order-list__checkbox--color" type="checkbox" name="pink" id="pink">
+                <label class="order-list__radio-checkbox-label order-list__radio-checkbox-label--checkbox" for="pink">Розовый</label>
               </li>
-              <li class="color__item">
-                <input class="color__input" type="checkbox" name="orange" id="orange">
-                <label class="color__value" for="orange">Оранжевый</label>
+              <li class="order-list__item order-list__item--color">
+                <input class="order-list__checkbox order-list__checkbox--color" type="checkbox" name="orange" id="orange">
+                <label class="order-list__radio-checkbox-label order-list__radio-checkbox-label--checkbox" for="orange">Оранжевый</label>
               </li>
             </ul>
           </fieldset>
@@ -117,13 +130,13 @@
               </li>
             </ol>
           </fieldset>
-          <div class="form__item phone-user">
+          <div class="form__item contacts-user">
             <label class="form__legend" for="phone">Тел</label>
-            <input class="phone-user__input" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <input class="contacts-user__input contacts-user__input--phone" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           </div>
-          <div class="form__item email-user">
+          <div class="form__item contacts-user">
             <label class="form__legend" for="e-mail" lang="en">E-mail</label>
-            <input class="email-user__input" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
+            <input class="contacts-user__input contacts-user__input--email" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
           </div>
           <div class="form__item wishes">
             <label class="form__legend" for="wishes"></label>
