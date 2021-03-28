@@ -8,7 +8,7 @@
 
 <body class="page-body">
   <header class="header">
-    <a class="header__logo logo" href="#">
+    <a class="header__logo logo" href="./index.html">
       <svg width="86" height="35" viewBox="0 0 86 35" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M4.54732 26.3186C4.54732 22.8186 4.24733 19.4186 4.14733 15.9186C4.14733 15.6186 4.14733 15.2186 4.14733 14.9186C4.14733 15.0186 4.24732 15.1186 4.24732 15.3186C4.74732 16.7186 5.34732 18.0186 6.04732 19.2186C6.74732 20.4186 7.14732 21.8186 7.54732 23.1186C7.34732 23.3186 7.24733 23.5186 7.34733 23.7186C7.34733 23.9186 7.44732 23.9186 7.54732 24.0186C8.04732 24.5186 9.04733 24.2186 9.64733 24.0186C9.84733 23.9186 10.1473 23.8186 10.3473 23.6186C10.6473 23.4186 11.0473 23.0186 10.9473 22.6186C10.9473 22.5186 10.9473 22.4186 10.8473 22.4186C11.2473 21.3186 11.4473 20.2186 11.6473 19.1186C11.8473 17.9186 12.3473 16.8186 12.7473 15.6186C12.7473 16.1186 12.8473 16.6186 12.8473 17.2186C13.0473 19.3186 12.8473 21.5186 12.8473 23.6186C12.8473 24.3186 12.8473 25.0186 13.0473 25.7186C13.1473 26.0186 13.3473 27.2186 13.2473 27.3186C12.7473 27.8186 12.8473 28.4186 13.5473 28.5186C14.3473 28.7186 15.3473 28.4186 15.8473 27.9186C16.8473 27.0186 16.3473 25.5186 16.1473 24.3186C15.7473 22.3186 16.2473 20.1186 16.1473 18.1186C16.0473 15.8186 15.7473 13.6186 15.7473 11.3186C15.7473 9.51856 16.0473 7.61856 15.4473 5.81856C15.4473 5.61856 15.5473 5.41856 15.5473 5.21856C15.7473 4.31856 12.7473 4.81856 12.3473 5.61856C12.0473 5.81856 11.9473 6.11856 12.0473 6.41856C12.0473 6.51856 12.1473 6.51856 12.1473 6.61856C11.5473 9.31856 10.8473 11.9186 9.94733 14.5186C9.64733 15.5186 9.24733 16.5186 8.84733 17.5186C8.34733 16.6186 7.84733 15.6186 7.44733 14.7186C6.24733 11.8186 5.24733 8.91856 3.84733 6.11856C4.04733 4.81856 1.14732 4.91856 0.547324 6.11856C-0.152676 7.51856 -0.0526737 9.01856 0.147326 10.5186C0.447326 12.2186 0.447326 13.9186 0.447326 15.6186C0.447326 18.9186 0.747327 22.3186 0.847327 25.6186C0.547327 25.9186 0.447325 26.3186 0.747325 26.8186C0.847325 27.0186 1.04732 27.1186 1.24732 27.3186C2.44732 28.0186 4.54732 27.5186 4.54732 26.3186Z" fill="black" />
         <path d="M22.7473 7.91856C22.6473 7.31856 19.3473 8.01856 19.4473 8.81856C19.7473 10.6186 19.6473 12.4186 19.5473 14.2186C19.5473 15.9186 19.9473 17.5186 20.1473 19.2186C20.3473 20.9186 20.0473 22.7186 20.2473 24.4186C20.3473 25.2186 20.8473 26.7186 20.3473 27.4186C19.9473 27.8186 21.5473 27.7186 21.6473 27.7186C22.2473 27.6186 23.1473 27.4186 23.5473 26.8186C24.1473 26.1186 23.7473 24.8186 23.5473 24.0186C23.2473 22.3186 23.4473 20.5186 23.3473 18.7186C23.2473 17.0186 22.7473 15.4186 22.6473 13.8186C22.9473 11.8186 23.0473 9.91856 22.7473 7.91856Z" fill="black" />
@@ -48,101 +48,69 @@
     <p class="header__legend">Бесплатная доставка по России</p>
   </header>
   <main class="main">
-    <section class="products">
-      <div class="products__wrapper">
-        <h1 class="products__heading">Милые штуки ручной работы для дома</h1>
-        <ul class="products__list">
-          <li class="products__item">
-            <a class="products__link" href="#">Предметы интерьера</a>
+    <section class="subject">
+      <div class="subject__wrapper">
+        <h1 class="subject__heading">Каталог товаров</h1>
+      </div>
+    </section>
+    <section class="cards">
+      <h2 class="cards__heading visually-hidden">Карточки товаров</h2>
+      <div class="cards__wrapper">
+        <ul class="cards__list">
+          <li class="cards__item">
+            <article class="card">
+              <div class="card__info">
+                <h3 class="card__heading">Зайчик-попрыгайчик</h3>
+                <p class="card__parameters">Рост 30 см, вес 200 г</p>
+              </div>
+              <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Голубой заяц со светлой головой рядом с жёлтым горшком">
+              <div class="card__price">
+                <p class="card__price-value">1 200 руб.</p>
+                <a class="card__button-to-cart" href="#"></a>
+              </div>
+            </article>
           </li>
-          <li class="products__item">
-            <a class="products__link" href="#">Детские игрушки</a>
+          <li class="cards__item">
+            <article class="card">
+              <div class="card__info">
+                <h3 class="card__heading">Корзинка для белья</h3>
+                <p class="card__parameters">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Три полотенца в компактной полосатой бело-бежевой корзинке">
+              <div class="card__price">
+                <p class="card__price-value">690 руб.</p>
+                <a class="card__button-to-cart" href="#"></a>
+              </div>
+            </article>
+          </li>
+          <li class="cards__item">
+            <article class="card">
+              <div class="card__info">
+                <h3 class="card__heading">Большая корзинка для игрушек</h3>
+                <p class="card__parameters">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Отряд плюшевых игрушек набился в большую полосатую салатово-белую корзинку и ожидает взлёта">
+              <div class="card__price">
+                <p class="card__price-value">1 500 руб.</p>
+                <a class="card__button-to-cart" href="#"></a>
+              </div>
+            </article>
           </li>
         </ul>
       </div>
     </section>
-    <section class="promotion">
-      <div class="promotion__wrapper">
-        <h2 class="promotion__heading heading">Вязаные корзинки</h2>
-        <p class="promotion__legend">Товар недели</p>
-        <div class="promotion__info">
-          <p class="promotion__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <dl class="promotion__list product-features">
-            <dt class="product-features__item">Цвет:</dt>
-            <dd class="product-features__description">«Тиффани»/серый</dd>
-            <dt class="product-features__item">Диаметр:</dt>
-            <dd class="product-features__description">25 см</dd>
-            <dt class="product-features__item">Высота:</dt>
-            <dd class="product-features__description">15 см</dd>
-          </dl>
-          <img class="promotion__image" src="./img/content-images/baskets.jpg" width="260" height="315" alt="Три разных по размеру и расцветке шерстяные корзинки на вытянутой руке, одна вложена в другую начиная с самой крупной">
-          <p class="promotion__price">Цена: 990 руб.</p>
-          <button class="promotion__button button" type="button">Заказать</button>
-        </div>
+    <aside class="production">
+      <div class="production__wrapper">
+        <h2 class="production__heading">Процесс производства</h2>
+        <img src="https://via.placeholder.com/260x150" width="260" height="150" alt="Видео производства вязаных декоративных изделий">
+        <p class="production__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="production__button" href="#">Сделать заказ</a>
       </div>
-    </section>
-    <section class="features">
-      <h2 class="features__heading heading">Коротко о нас:</h2>
-      <ul class="features__list">
-        <li class="features__item features__item--ecological">Экологически чистые материалы</li>
-        <li class="features__item features__item--style">Скандинавский стиль по российской цене</li>
-        <li class="features__item features__item--like">Увеличивает лайки на фотографиях</li>
-        <li class="features__item features__item--wool">Связано вручную с любовью и умилением</li>
-        <li class="features__item features__item--rocket">Поддержка отечественного производителя</li>
-        <li class="features__item features__item--present">Поставляется в подарочной упаковке</li>
-      </ul>
-    </section>
-    <section class="reviews">
-      <div class="reviews__wrapper">
-        <h2 class="reviews__heading heading">Отзывы</h2>
-        <ul class="reviews__list reviews-slider">
-          <li class="reviews-slider__item">
-            <blockquote class="reviews-slider__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-              у популярных инстамамочек.
-              В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
-            <cite class="reviews-slider__author">Анастасия Красильникова</cite>
-            <p class="reviews-slider__nick">@misssssiskras</p>
-          </li>
-          <li class="reviews-slider__item">
-            <blockquote class="reviews-slider__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
-              и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-              больше лайков!</blockquote>
-            <cite class="reviews-slider__author">Екатерина Красильникова</cite>
-            <p class="reviews-slider__nick">@misssssiskras2</p>
-          </li>
-          <li class="reviews-slider__item">
-            <blockquote class="reviews-slider__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
-              и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-              больше лайков!</blockquote>
-            <cite class="reviews-slider__author">Елена Красильникова</cite>
-            <p class="reviews-slider__nick">@misssssiskras3</p>
-          </li>
-        </ul>
-        <div class="reviews__controls slider-controls">
-          <button class="slider-controls__button slider-controls__button--prev" type="button" aria-label="Предыдущий отзыв"></button>
-          <button class="slider-controls__button slider-controls__button--next" type="button" aria-label="Следующий отзыв"></button>
-        </div>
-        <a class="reviews__button button" href="#">Написать</a>
-      </div>
-    </section>
-    <section class="contacts">
-      <div class="contacts__wrapper">
-        <h2 class="contacts__heading">Контакты</h2>
-        <dl class="contacts__list contacts-list">
-          <dt class="contacts-list__item" lang="en">e-mail:</dt>
-          <dd class="contacts-list__description"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
-          <dt class="contacts-list__item">адрес:</dt>
-          <dd class="contacts-list__description">г. Санкт-Петербург ул. Большая Конюшеннаяд. 19/8, офис 101</dd>
-        </dl>
-        <div class="contacts__map"></div>
-        <a class="contacts__feedback button" href="#">Напишите нам</a>
-      </div>
-    </section>
+    </aside>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <a class="footer__logo logo" href="#">
+      <a class="footer__logo logo" href="./index.html">
         <svg width="86" height="35" viewBox="0 0 86 35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M4.54732 26.3186C4.54732 22.8186 4.24733 19.4186 4.14733 15.9186C4.14733 15.6186 4.14733 15.2186 4.14733 14.9186C4.14733 15.0186 4.24732 15.1186 4.24732 15.3186C4.74732 16.7186 5.34732 18.0186 6.04732 19.2186C6.74732 20.4186 7.14732 21.8186 7.54732 23.1186C7.34732 23.3186 7.24733 23.5186 7.34733 23.7186C7.34733 23.9186 7.44732 23.9186 7.54732 24.0186C8.04732 24.5186 9.04733 24.2186 9.64733 24.0186C9.84733 23.9186 10.1473 23.8186 10.3473 23.6186C10.6473 23.4186 11.0473 23.0186 10.9473 22.6186C10.9473 22.5186 10.9473 22.4186 10.8473 22.4186C11.2473 21.3186 11.4473 20.2186 11.6473 19.1186C11.8473 17.9186 12.3473 16.8186 12.7473 15.6186C12.7473 16.1186 12.8473 16.6186 12.8473 17.2186C13.0473 19.3186 12.8473 21.5186 12.8473 23.6186C12.8473 24.3186 12.8473 25.0186 13.0473 25.7186C13.1473 26.0186 13.3473 27.2186 13.2473 27.3186C12.7473 27.8186 12.8473 28.4186 13.5473 28.5186C14.3473 28.7186 15.3473 28.4186 15.8473 27.9186C16.8473 27.0186 16.3473 25.5186 16.1473 24.3186C15.7473 22.3186 16.2473 20.1186 16.1473 18.1186C16.0473 15.8186 15.7473 13.6186 15.7473 11.3186C15.7473 9.51856 16.0473 7.61856 15.4473 5.81856C15.4473 5.61856 15.5473 5.41856 15.5473 5.21856C15.7473 4.31856 12.7473 4.81856 12.3473 5.61856C12.0473 5.81856 11.9473 6.11856 12.0473 6.41856C12.0473 6.51856 12.1473 6.51856 12.1473 6.61856C11.5473 9.31856 10.8473 11.9186 9.94733 14.5186C9.64733 15.5186 9.24733 16.5186 8.84733 17.5186C8.34733 16.6186 7.84733 15.6186 7.44733 14.7186C6.24733 11.8186 5.24733 8.91856 3.84733 6.11856C4.04733 4.81856 1.14732 4.91856 0.547324 6.11856C-0.152676 7.51856 -0.0526737 9.01856 0.147326 10.5186C0.447326 12.2186 0.447326 13.9186 0.447326 15.6186C0.447326 18.9186 0.747327 22.3186 0.847327 25.6186C0.547327 25.9186 0.447325 26.3186 0.747325 26.8186C0.847325 27.0186 1.04732 27.1186 1.24732 27.3186C2.44732 28.0186 4.54732 27.5186 4.54732 26.3186Z" fill="black" />
           <path d="M22.7473 7.91856C22.6473 7.31856 19.3473 8.01856 19.4473 8.81856C19.7473 10.6186 19.6473 12.4186 19.5473 14.2186C19.5473 15.9186 19.9473 17.5186 20.1473 19.2186C20.3473 20.9186 20.0473 22.7186 20.2473 24.4186C20.3473 25.2186 20.8473 26.7186 20.3473 27.4186C19.9473 27.8186 21.5473 27.7186 21.6473 27.7186C22.2473 27.6186 23.1473 27.4186 23.5473 26.8186C24.1473 26.1186 23.7473 24.8186 23.5473 24.0186C23.2473 22.3186 23.4473 20.5186 23.3473 18.7186C23.2473 17.0186 22.7473 15.4186 22.6473 13.8186C22.9473 11.8186 23.0473 9.91856 22.7473 7.91856Z" fill="black" />
