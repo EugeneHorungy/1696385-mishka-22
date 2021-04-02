@@ -1,0 +1,12 @@
+.contacts {
+  background-color: $main-bg-color;
+}
+
+.contacts__wrapper {
+  @include container();
+}
+
+.contacts__heading {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(18px, 30px);
+}

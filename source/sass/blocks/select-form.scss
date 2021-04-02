@@ -1,0 +1,13 @@
+.select-form__label {
+  @include text($text-color-gray, bold, normal, $primary-font);
+  @include text-size(17px, 16px);
+}
+
+.select-form__text {
+  @include text($text-color-gray, normal, normal, $primary-font);
+  @include text-size(15px, 30px);
+}
+
+.select-form__list {
+  @include list-reset();
+}

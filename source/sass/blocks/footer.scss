@@ -1,0 +1,7 @@
+.footer {
+  background-color: $gray-lighten;
+}
+
+.footer__wrapper {
+  @include container();
+}

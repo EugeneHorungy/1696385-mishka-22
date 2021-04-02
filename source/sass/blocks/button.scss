@@ -1,0 +1,18 @@
+.button {
+  @include text($text-color-gray, bold, normal, $primary-font);
+  @include text-size(18px, 20px);
+  @include text-uppercase();
+  display: block;
+  width: 100%;
+  padding: 16px 10px;
+  text-align: center;
+  background-color: $main-bg-color;
+  border: 2px solid $gray-darken;
+  cursor: pointer;
+}
+
+.button--modal {
+  @include text($text-color-white, bold, normal, $primary-font);
+  background-color: $cian;
+  border: none;
+}

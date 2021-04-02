@@ -1,0 +1,10 @@
+.contacts-list {
+  @include text($text-color-gray, normal, normal, $primary-font);
+  @include text-size(14px, 30px);
+  background-color: $main-bg-color;
+}
+
+.contacts-list__link {
+  @include text($text-color-gray, normal, normal, $primary-font);
+  @include text-size(14px, 30px);
+}

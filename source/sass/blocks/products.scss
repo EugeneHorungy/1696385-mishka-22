@@ -1,0 +1,43 @@
+.products__title {
+  background-color: $cian;
+  background-image: url("../../img/background-images/products-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100%;
+  padding-top: 72px;
+  padding-bottom: 193px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.products__heading {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(27px, 30px);
+  text-align: center;
+}
+
+.products__list {
+  @include list-reset();
+}
+
+.products__item--interior {
+  background-color: $cian;
+}
+
+.products__item--toys {
+  background-color: $cian-darken;
+}
+
+.products__link {
+  @include container();
+  display: block;
+}
+
+.products__text {
+  @include text($text-color-white, bold, normal, $primary-font);
+  @include text-size(19px, 24px);
+  @include text-reset();
+  padding-top: 24px;
+  padding-bottom: 31px;
+  max-width: 160px;
+}

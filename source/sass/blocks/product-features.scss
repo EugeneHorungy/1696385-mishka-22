@@ -1,0 +1,5 @@
+.product-features {
+  @include text($text-color-gray, normal, normal, $primary-font);
+  @include text-size(15px, 20px);
+  background-color: $main-bg-color;
+}

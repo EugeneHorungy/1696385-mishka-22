@@ -1,0 +1,18 @@
+.user-list {
+  @include list-reset;
+  background-color: $main-bg-color;
+}
+
+.user-list__search {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(17px, 24px);
+  @include text-uppercase();
+  @include menu-link();
+}
+
+.user-list__cart {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(17px, 24px);
+  @include text-uppercase();
+  @include menu-link();
+}
