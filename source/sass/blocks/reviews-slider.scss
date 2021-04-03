@@ -1,0 +1,17 @@
+.reviews-slider__text {
+  @include text($text-color-gray, normal, normal, $primary-font);
+  @include text-size(15px, 30px);
+  @include text-reset();
+}
+
+.reviews-slider__author {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(17px, 24px);
+  @include text-reset();
+}
+
+.reviews-slider__nick {
+  @include text($text-color-gray, normal, normal, $primary-font);
+  @include text-size(15px, 30px);
+  @include text-reset();
+}

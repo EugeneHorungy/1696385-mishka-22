@@ -1,0 +1,23 @@
+.features {
+  background-color: $main-bg-color;
+}
+
+.features__wrapper {
+  @include container();
+}
+
+.features__heading {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(25px, 30px);
+  @include text-reset();
+}
+
+.features__list {
+  @include list-reset();
+}
+
+.features__item {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(17px, 20px);
+  padding-top: 82px;
+}

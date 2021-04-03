@@ -1,0 +1,11 @@
+.site-list {
+  @include list-reset;
+  background-color: $main-bg-color;
+}
+
+.site-list__link {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(17px, 24px);
+  @include text-uppercase();
+  @include menu-link();
+}

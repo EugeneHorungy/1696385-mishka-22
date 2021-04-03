@@ -1,0 +1,11 @@
+.header {
+  background-color: $main-bg-color;
+}
+
+.header__legend {
+  display: none;
+}
+
+.header__logo {
+  @include menu-link();
+}

@@ -1,0 +1,17 @@
+.reviews {
+  background-color: $main-bg-color;
+}
+
+.reviews__wrapper {
+  @include container();
+}
+
+.reviews__heading {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(25px, 30px);
+  @include text-reset();
+}
+
+.reviews__list {
+  @include list-reset;
+}

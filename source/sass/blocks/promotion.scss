@@ -1,0 +1,24 @@
+.promotion__wrapper {
+  @include container();
+}
+
+.promotion__heading {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(25px, 30px);
+  @include text-reset();
+}
+
+.promotion__legend {
+  @include text($text-color-accent, bold, normal, $primary-font);
+  @include text-size(17px, 20px);
+}
+
+.promotion__text {
+  @include text($text-color-gray, normal, normal, $primary-font);
+  @include text-size(15px, 24px);
+}
+
+.promotion__price {
+  @include text($text-color-gray, bold, normal, $primary-font);
+  @include text-size(17px, 24px);
+}

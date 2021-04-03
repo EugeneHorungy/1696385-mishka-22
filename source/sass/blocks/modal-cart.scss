@@ -1,0 +1,12 @@
+.modal-cart {
+  background-color: $main-bg-color;
+}
+
+.modal-cart__wrapper {
+  @include container();
+}
+
+.modal-cart__heading {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(25px, 30px);
+}
