@@ -1,0 +1,9 @@
+.order__wrapper {
+  @include container();
+  background-color: $main-bg-color;
+}
+
+.order__tagline {
+  @include text($text-color-gray, normal, normal, $primary-font);
+  @include text-size(13px, 24px);
+}

@@ -6,12 +6,16 @@ $cian-darken: #56c3b2;
 $gray-darken: #444444;
 $gray-lighten: #f1f1f1;
 $gray: #ececec;
+$gray-black: rgba(0, 0, 0, 0.3);
 // Semantic colors
 $text-color-primary: $basic-black;
 $text-color-white: $basic-white;
 $text-color-gray: $gray-darken;
 $text-color-accent: $cian;
+$text-color-placeholder: $gray-black;
 $main-bg-color: $basic-white;
 $footer-bg-color: $gray-lighten;
+$subject-bg-color: $gray-lighten;
+$input-border-color: $basic-black;
 // Fonts
 $primary-font: "Open Sans", "Arial", sans-serif;

@@ -1,0 +1,18 @@
+.order-list {
+  @include list-reset();
+  background-color: $main-bg-color;
+}
+
+.order-list__radio-checkbox-label {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(17px, 18px);
+  margin-bottom: 34px;
+}
+
+.order-list__radio {
+  margin-bottom: 24px;
+}
+
+.order-list__checkbox {
+  margin-bottom: 44px;
+}

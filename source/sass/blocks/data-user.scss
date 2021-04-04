@@ -1,0 +1,24 @@
+.data-user {
+  background-color: $main-bg-color;
+}
+
+.data-user__list {
+  @include list-reset();
+}
+
+.data-user__label {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(17px, 18px);
+  display: block;
+}
+
+.data-user__input {
+  @include input-text();
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-bottom: 22px;
+
+  &::placeholder {
+    @include placeholder-text();
+  }
+}

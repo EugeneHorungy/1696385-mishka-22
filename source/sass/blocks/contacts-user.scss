@@ -1,0 +1,14 @@
+.contacts-user {
+  background-color: $main-bg-color;
+}
+
+.contacts-user__input {
+  @include input-text();
+  padding-top: 16px;
+  padding-bottom: 18px;
+  margin-bottom: 34px;
+
+  &::placeholder {
+    @include placeholder-text();
+  }
+}

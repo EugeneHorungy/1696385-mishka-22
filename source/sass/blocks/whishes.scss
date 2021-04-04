@@ -1,0 +1,13 @@
+.whishes {
+  background-color: $main-bg-color;
+}
+
+.wishes__input {
+  min-width: 260px;
+  border: 2px solid $input-border-color;
+  padding: 17px;
+
+  &::placeholder {
+    @include placeholder-text();
+  }
+}
