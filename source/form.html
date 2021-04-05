@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Интернет-магазин вязаных вещиц для дома Мишка</title>
 </head>
 
@@ -38,7 +40,7 @@
       </ul>
       <ul class="nav__list user-list">
         <li class="user-list__item">
-          <button class="user-list__search" type="button"><span>Поиск по сайту</span></button>
+          <a class="user-list__search" href="#">Поиск по сайту</a>
         </li>
         <li class="user-list__item">
           <a class="user-list__cart" href="#">Корзина:<span>пока пуста</span></a>
@@ -105,15 +107,15 @@
             <ol class="data-user__list">
               <li class="data-user__item">
                 <label class="data-user__label" for="first-name">Имя:</label>
-                <input class="data-user__input" type="text" name="first-name" id="first-name" required>
+                <input class="data-user__input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
               </li>
               <li class="data-user__item">
                 <label class="data-user__label" for="second-name">Фамилия:</label>
-                <input class="data-user__input" type="text" name="second-name" id="second-name" required>
+                <input class="data-user__input" type="text" name="second-name" id="second-name" placeholder="Укажите фамилию*" required>
               </li>
               <li class="data-user__item">
                 <label class="data-user__label" for="third-name">Отчество:</label>
-                <input class="data-user__input" type="text" name="third-name" id="third-name">
+                <input class="data-user__input" type="text" name="third-name" id="third-name" placeholder="Отчество, если желаете">
               </li>
             </ol>
           </fieldset>
@@ -126,7 +128,7 @@
             <input class="contacts-user__input contacts-user__input--email" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
           </div>
           <div class="form__item wishes">
-            <label class="form__legend" for="wishes"></label>
+            <label class="form__legend" for="wishes">Доп</label>
             <textarea class="wishes__input" name="wishes" id="wishes" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
           <p class="form__footnote">*Поля обязательны для заполнения</p>

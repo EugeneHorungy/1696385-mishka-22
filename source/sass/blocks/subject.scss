@@ -1,0 +1,14 @@
+.subject {
+  background-color: $subject-bg-color;
+}
+
+.subject__wrapper {
+  @include container();
+  padding: 72px 22px;
+}
+
+.subject__heading {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(27px, 30px);
+  text-align: center;
+}

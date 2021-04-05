@@ -1,0 +1,34 @@
+.form {
+  background-color: $main-bg-color;
+  padding-bottom: 55px;
+}
+
+.form__item {
+  @include text-reset();
+  border: none;
+}
+
+.form__legend {
+  @include text($cian, bold, normal, $primary-font);
+  @include text-size(17px, 16px);
+  @include text-uppercase();
+  @include text-reset();
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 28px;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: 1px;
+    background-color: $cian;
+    margin-left: 20px;
+  }
+}
+
+.form__footnote {
+  @include text($text-color-gray, normal, normal, $primary-font);
+  @include text-size(14px, 16px);
+}

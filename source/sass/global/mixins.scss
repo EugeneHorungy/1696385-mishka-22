@@ -27,10 +27,26 @@
 
 @mixin text-reset() {
   margin: 0;
+  padding: 0;
 }
 
 @mixin menu-link() {
   display: block;
   padding: 27px 0 27px 76px;
   border-bottom: 1px solid $gray;
+}
+
+@mixin input-text() {
+  min-width: 260px;
+  border: none;
+  border-bottom: 2px solid $input-border-color;
+}
+
+@mixin placeholder-text() {
+  font-size: 17px;
+  line-height: 18px;
+  color: $text-color-placeholder;
+  font-weight: normal;
+  font-style: normal;
+  font-family: $primary-font;
 }
