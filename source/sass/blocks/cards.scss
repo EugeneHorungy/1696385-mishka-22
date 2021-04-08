@@ -1,0 +1,8 @@
+.cards {
+  @include container();
+  background-color: $main-bg-color;
+}
+
+.cards__list {
+  @include list-reset();
+}

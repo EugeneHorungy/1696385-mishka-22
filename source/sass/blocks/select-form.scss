@@ -1,6 +1,15 @@
 .select-form__label {
   @include text($text-color-gray, bold, normal, $primary-font);
   @include text-size(17px, 16px);
+  display: block;
+  border: 2px solid $modal-input-color;
+  padding: 18px 19px;
+  min-width: 82px;
+  text-align: center;
+}
+
+.select-form__input:checked + .select-form__label {
+  border-color: $modal-input-current-color;
 }
 
 .select-form__text {
@@ -10,4 +19,7 @@
 
 .select-form__list {
   @include list-reset();
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
 }

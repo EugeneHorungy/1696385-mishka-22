@@ -1,0 +1,20 @@
+.card {
+  background-color: $main-bg-color;
+  border-bottom: 1px solid $card-border-color;
+  margin-bottom: 30px;
+}
+
+.card__heading {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(17px, 24px);
+}
+
+.card__parameters {
+  @include text($text-color-gray, normal, normal, $primary-font);
+  @include text-size(13px, 30px);
+}
+
+.card__price-value {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(15px, 24px);
+}
