@@ -1,0 +1,21 @@
+.production {
+  @include container();
+  background-color: $main-bg-color;
+  margin-bottom: 58px;
+}
+
+.production__wrapper {
+  border-top: 1px solid $card-border-color;
+  border-bottom: 1px solid $card-border-color;
+  padding-bottom: 33px;
+}
+
+.production__heading {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(17px, 24px);
+}
+
+.production__info {
+  @include text($text-color-gray, normal, normal, $primary-font);
+  @include text-size(13px, 24px);
+}
