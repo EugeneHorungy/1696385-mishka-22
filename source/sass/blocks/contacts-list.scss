@@ -4,7 +4,28 @@
   background-color: $main-bg-color;
 }
 
+.contacts-list__wrapper {
+  display: flex;
+
+  &:first-child {
+    margin-bottom: 28px;
+  }
+
+  &:last-child {
+    margin-bottom: 64px;
+  }
+}
+
+.contacts-list__item {
+  margin-right: 34px;
+}
+
+.contacts-list__description {
+  margin-left: 0;
+}
+
 .contacts-list__link {
   @include text($text-color-gray, normal, normal, $primary-font);
   @include text-size(14px, 30px);
+  border-bottom: 1px solid $cian;
 }

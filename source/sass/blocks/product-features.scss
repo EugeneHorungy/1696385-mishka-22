@@ -1,5 +1,21 @@
 .product-features {
   @include text($text-color-gray, normal, normal, $primary-font);
   @include text-size(15px, 20px);
+  margin-bottom: 30px;
   background-color: $main-bg-color;
+}
+
+.product-features__wrapper {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid $border-color-gray;
+}
+
+.product-features__item {
+  @include text-reset();
+  width: 37%;
+}
+
+.product-features__description {
+  @include text-reset();
 }

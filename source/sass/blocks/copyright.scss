@@ -1,5 +1,12 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .copyright__text {
   @include text($text-color-primary, bold, normal, $primary-font);
   @include text-size(19px, 18px);
   @include text-reset();
+  margin-right: 28px;
 }

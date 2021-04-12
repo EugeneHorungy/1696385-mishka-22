@@ -1,7 +1,35 @@
 .footer {
   background-color: $gray-lighten;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .footer__wrapper {
   @include container();
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    @include container-max();
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.footer__copyright {
+  padding-top: 24px;
+  padding-bottom: 28px;
 }

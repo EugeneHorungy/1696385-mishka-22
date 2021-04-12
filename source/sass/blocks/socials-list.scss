@@ -1,0 +1,10 @@
+.socials-list {
+  @include list-reset();
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 18px;
+}
+
+.socials-list__item:not(:first-child) {
+  margin-left: 41px;
+}

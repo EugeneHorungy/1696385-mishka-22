@@ -1,3 +1,51 @@
 .nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
   background-color: $main-bg-color;
+
+  @media (min-width: $tablet-width) {
+    background-color: $transparent;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+.nav__button {
+  width: 79px;
+  height: 79px;
+  position: relative;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-bg-color;
+  cursor: pointer;
+  border: none;
+
+  &--opened::after {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 20px;
+    background-image: url("../img/decor-images/menu-opened.svg");
+    background-repeat: no-repeat;
+    background-size: 21px 20px;
+  }
+
+  &--closed::before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 20px;
+    background-image: url("../img/decor-images/menu-closed.svg");
+    background-repeat: no-repeat;
+    background-size: 21px 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

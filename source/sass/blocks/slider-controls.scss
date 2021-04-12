@@ -1,0 +1,22 @@
+.slider-controls {
+  display: flex;
+}
+
+.slider-controls__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 130px;
+  min-height: 52px;
+  background-color: $transparent;
+  border: 1px solid $border-color-gray;
+
+  &:last-child {
+    transform: rotate(180deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 89px;
+    border: none;
+  }
+}

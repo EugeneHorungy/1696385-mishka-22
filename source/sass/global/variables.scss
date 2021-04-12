@@ -8,6 +8,7 @@ $gray-darken: #444444;
 $gray-lighten: #f1f1f1;
 $gray: #ececec;
 $gray-black: rgba(0, 0, 0, 0.3);
+$transparent: transparent;
 // Semantic colors
 $text-color-primary: $basic-black;
 $text-color-white: $basic-white;
@@ -20,8 +21,13 @@ $subject-bg-color: $gray-lighten;
 $input-border-color: $basic-black;
 $radio-checkbox-border-color: $gray-darken;
 $radio-checked-color: $cian-2;
+$border-color-gray: $gray;
 $card-border-color: $gray;
 $modal-input-color: $gray;
 $modal-input-current-color: $cian;
 // Fonts
 $primary-font: "Open Sans", "Arial", sans-serif;
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$mobile-width-only: 767px;
