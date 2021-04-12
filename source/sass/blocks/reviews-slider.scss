@@ -1,17 +1,41 @@
+.reviews-slider__item {
+  display: none;
+
+  &--current {
+    display: block;
+  }
+}
+
 .reviews-slider__text {
   @include text($text-color-gray, normal, normal, $primary-font);
   @include text-size(15px, 30px);
   @include text-reset();
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    @include text-size(17px, 30px);
+    margin-bottom: 60px;
+  }
 }
 
 .reviews-slider__author {
   @include text($text-color-primary, bold, normal, $primary-font);
   @include text-size(17px, 24px);
   @include text-reset();
+
+  @media (min-width: $tablet-width) {
+    @include text-size(18px, 24px);
+  }
 }
 
 .reviews-slider__nick {
   @include text($text-color-gray, normal, normal, $primary-font);
-  @include text-size(15px, 30px);
+  @include text-size(17px, 24px);
   @include text-reset();
+  margin-top: 6px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    @include text-size(18px, 24px);
+  }
 }

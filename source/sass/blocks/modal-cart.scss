@@ -3,6 +3,14 @@
   padding-bottom: 46px;
 }
 
+.modal-cart--closed {
+  display: none;
+}
+
+.modal-cart--opened {
+  display: fixed;
+}
+
 .modal-cart__wrapper {
   @include container();
 }

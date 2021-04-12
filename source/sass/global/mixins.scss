@@ -19,6 +19,11 @@
   padding: 0 30px;
 }
 
+@mixin container-max() {
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
 @mixin list-reset() {
   list-style: none;
   margin: 0;
@@ -32,7 +37,14 @@
 
 @mixin menu-link() {
   display: block;
-  padding: 27px 0 27px 76px;
+  padding: 27px 10px 27px 76px;
+  border-bottom: 1px solid $gray;
+}
+
+@mixin user-menu-link() {
+  display: flex;
+  align-items: center;
+  padding: 27px 10px 27px 30px;
   border-bottom: 1px solid $gray;
 }
 
