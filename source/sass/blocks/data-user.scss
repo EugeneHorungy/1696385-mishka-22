@@ -1,15 +1,46 @@
 .data-user {
+  margin-bottom: 14px;
   background-color: $main-bg-color;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+  }
 }
 
 .data-user__list {
   @include list-reset();
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 6;
+  }
+}
+
+.data-user__item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .data-user__label {
   @include text($text-color-primary, bold, normal, $primary-font);
   @include text-size(17px, 18px);
   display: block;
+
+  @media (min-width: $tablet-width) {
+    @include text-size(19px, 18px);
+    margin-right: 26px;
+    margin-bottom: 30px;
+  }
 }
 
 .data-user__input {
@@ -19,6 +50,15 @@
   margin-bottom: 22px;
 
   &::placeholder {
+    @include text-size(17px, 18px);
     @include placeholder-text();
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+
+    &::placeholder {
+      @include text-size(19px, 18px);
+    }
   }
 }
