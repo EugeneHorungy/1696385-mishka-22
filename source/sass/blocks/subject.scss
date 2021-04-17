@@ -1,14 +1,41 @@
 .subject {
-  background-color: $subject-bg-color;
+  background-color: $gray-bg-color;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -78px;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 72px;
+  }
 }
 
 .subject__wrapper {
   @include container();
-  padding: 72px 22px;
+  padding: 52px 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 68px;
+    padding-bottom: 62px;
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 96px;
+    }
+  }
 }
 
 .subject__heading {
   @include text($text-color-primary, bold, normal, $primary-font);
   @include text-size(27px, 30px);
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include text-size(43px, 50px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text-size(53px, 57px);
+  }
 }

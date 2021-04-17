@@ -1,0 +1,47 @@
+.wishes {
+  display: flex;
+  flex-direction: column;
+  background-color: $main-bg-color;
+
+  @media (min-width: $tablet-width) {
+    @include container-max();
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.wishes__input {
+  width: 100%;
+  border: 2px solid $input-border-color;
+  margin-top: 18px;
+  padding: 17px;
+
+  &::placeholder {
+    @include text-size(17px, 18px);
+    @include placeholder-text();
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+
+    &::placeholder {
+      @include text-size(19px, 18px);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 6;
+  }
+}
+
+.wishes__label {
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+  }
+}

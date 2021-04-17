@@ -5,7 +5,31 @@
 
 .form__item {
   @include text-reset();
+  margin-bottom: 20px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    &--color {
+      background-color: $gray-bg-color;
+      padding-top: 65px;
+    }
+  }
+}
+
+.form__item-wrapper {
+  @media (min-width: $tablet-width) {
+    @include container-max();
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.form__item--whishes {
+  margin-bottom: 0;
 }
 
 .form__legend {
@@ -18,17 +42,81 @@
   width: 100%;
   margin-bottom: 28px;
 
-  &::after {
-    content: "";
-    flex-grow: 1;
-    flex-shrink: 0;
-    height: 1px;
-    background-color: $cian;
-    margin-left: 20px;
+  &--type {
+    margin-bottom: 34px;
+  }
+
+  &--color {
+    margin-bottom: 34px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      flex-grow: 1;
+      flex-shrink: 0;
+      height: 1px;
+      background-color: $cian;
+      margin-left: 20px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 46px;
+  }
+}
+
+.form__bottom {
+  @media (min-width: $tablet-width) {
+    @include container-max();
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
 .form__footnote {
   @include text($text-color-gray, normal, normal, $primary-font);
   @include text-size(14px, 16px);
+  @include text-reset();
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    @include text-size(17px, 30px);
+    grid-column: 2 / -1;
+    justify-self: end;
+    margin-top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / 6;
+  }
+}
+
+.form__button {
+  max-height: 52px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 230px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 4;
+  }
 }

@@ -1,9 +1,34 @@
 .order__wrapper {
-  @include container();
   background-color: $main-bg-color;
+
+  @media (max-width: $mobile-width-only) {
+    @include container();
+  }
+}
+
+.order__tagline-wrapper {
+  @include container-max();
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 .order__tagline {
   @include text($text-color-gray, normal, normal, $primary-font);
   @include text-size(13px, 24px);
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    @include container-max();
+    @include text-size(17px, 30px);
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 6;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

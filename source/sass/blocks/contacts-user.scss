@@ -1,5 +1,38 @@
 .contacts-user {
+  position: relative;
+  margin-bottom: 0;
   background-color: $main-bg-color;
+
+  @media (min-width: $tablet-width) {
+    background-color: $gray-bg-color;
+
+    &--phone {
+      padding-top: 64px;
+    }
+
+    &--email {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.contacts-user__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    @include container-max();
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.contacts-user__label {
+  margin-bottom: 6px;
 }
 
 .contacts-user__input {
@@ -7,8 +40,62 @@
   padding-top: 16px;
   padding-bottom: 18px;
   margin-bottom: 34px;
+  background-color: $transparent;
 
   &::placeholder {
+    @include text-size(17px, 18px);
     @include placeholder-text();
   }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+
+    &::placeholder {
+      @include text-size(19px, 18px);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 6;
+  }
 }
+
+.contacts-user__icon {
+  position: absolute;
+  top: 30px;
+  right: 8px;
+
+  @media (min-width: $tablet-width) {
+    &--phone {
+      top: 70px;
+      right: 60px;
+    }
+
+    &--email {
+      top: 20px;
+      right: 60px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--phone {
+      right: 230px;
+    }
+
+    &--email {
+      right: 230px;
+    }
+  }
+}
+
+// .contacts-user__input--phone::after {
+//   content: "";
+//   position: absolute;
+//   width: 25px;
+//   height: 24px;
+//   top: 0;
+//   right: 0;
+//   background-image: url("../img/decor-images/icon-phone.svg");
+//   background-repeat: no-repeat;
+//   background-position: 0 0;
+// }

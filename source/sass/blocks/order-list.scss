@@ -1,6 +1,43 @@
 .order-list {
   @include list-reset();
+  display: flex;
+  flex-direction: column;
   background-color: $main-bg-color;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+    background-color: $transparent;
+
+    &--color {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--color {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+.order-list__item {
+  &--type {
+    margin-bottom: 24px;
+  }
+
+  &--color {
+    margin-bottom: 43px;
+  }
+
+  &--color:last-child {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
 }
 
 .order-list__radio-checkbox-label {
@@ -10,11 +47,18 @@
   position: relative;
   padding-left: 60px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    @include text-size(19px, 18px);
+    padding-left: 78px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .order-list__radio-checkbox-label--radio {
-  margin-bottom: 24px;
-
   &::before {
     position: absolute;
     content: "";
@@ -25,6 +69,13 @@
     border: 2px solid $radio-checkbox-border-color;
     border-radius: 50%;
     transform: translateY(-50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 52px;
+      height: 52px;
+    }
   }
 }
 
@@ -40,11 +91,17 @@
     border-radius: 50%;
     transform: translateY(-50%);
   }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: 16px;
+      width: 22px;
+      height: 22px;
+    }
+  }
 }
 
 .order-list__radio-checkbox-label--checkbox {
-  margin-bottom: 44px;
-
   &::before {
     position: absolute;
     content: "";
@@ -54,6 +111,13 @@
     height: 42px;
     border: 2px solid $radio-checkbox-border-color;
     transform: translateY(-50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 52px;
+      height: 52px;
+    }
   }
 }
 
@@ -69,5 +133,13 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     transform: translateY(-50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      background-image: url("../img/decor-images/checkbox-tick-big.svg");
+      width: 31px;
+      height: 22px;
+    }
   }
 }
