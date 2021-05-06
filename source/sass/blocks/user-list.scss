@@ -1,14 +1,11 @@
 .user-list {
   @include list-reset;
-  display: flex;
-  flex-direction: column;
   background-color: $main-bg-color;
 
   @media (min-width: $tablet-width) {
-    order: -1;
-    flex-direction: row;
-    margin-left: auto;
-    align-items: stretch;
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    display: flex;
   }
 }
 
@@ -32,6 +29,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 82px;
   }
 }
 

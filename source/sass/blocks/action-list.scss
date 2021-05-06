@@ -1,0 +1,25 @@
+.action-list {
+  @include list-reset;
+  display: none;
+  background-color: $main-bg-color;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / -1;
+    display: flex;
+    background-color: $transparent;
+  }
+}
+
+.action-list__link {
+  @include text($text-color-primary, bold, normal, $primary-font);
+  @include text-size(17px, 24px);
+  @include menu-link();
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding-left: 0;
+    margin-right: 26px;
+    font-size: 15px;
+  }
+}
