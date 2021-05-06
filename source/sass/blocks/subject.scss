@@ -4,6 +4,8 @@
   @media (min-width: $tablet-width) {
     margin-top: -78px;
     margin-bottom: 44px;
+    position: relative;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {

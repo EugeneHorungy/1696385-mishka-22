@@ -38,12 +38,13 @@
 
 .reviews__wrapper {
   @include container();
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     @include container-max();
     padding-top: 76px;
     display: grid;
-    grid-template-columns: repeat(4, 167px);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
   }
 

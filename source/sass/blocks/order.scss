@@ -7,7 +7,9 @@
 }
 
 .order__tagline-wrapper {
-  @include container-max();
+  @media (min-width: $tablet-width) {
+    @include container-max();
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -21,7 +23,6 @@
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    @include container-max();
     @include text-size(17px, 30px);
     margin-bottom: 76px;
   }
