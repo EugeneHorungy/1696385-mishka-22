@@ -7,9 +7,12 @@
   background-color: $main-bg-color;
 
   @media (min-width: $tablet-width) {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 348px;
+    grid-template-rows: auto auto;
     background-color: $transparent;
-    justify-content: flex-start;
-    width: 100%;
   }
 }
 
@@ -18,7 +21,7 @@
   height: 79px;
   position: relative;
   align-self: flex-end;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background-color: $main-bg-color;

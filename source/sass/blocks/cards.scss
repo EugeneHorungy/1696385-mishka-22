@@ -1,8 +1,22 @@
 .cards {
   @include container();
   background-color: $main-bg-color;
+
+  @media (min-width: $tablet-width) {
+    @include container-max();
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop();
+  }
 }
 
 .cards__list {
   @include list-reset();
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 51px;
+  }
 }

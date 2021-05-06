@@ -49,7 +49,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include container-max();
+    @include container-desktop();
     padding-top: 72px;
     grid-template-columns: repeat(6, 175px);
     grid-template-rows: repeat(3, auto);

@@ -1,4 +1,5 @@
 .subject {
+  margin-bottom: 30px;
   background-color: $gray-bg-color;
 
   @media (min-width: $tablet-width) {
@@ -6,11 +7,27 @@
     margin-bottom: 44px;
     position: relative;
     z-index: -1;
+    border-top: 1px solid $gray;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/zigzags/zigzag-fill-tablet.svg");
+      background-repeat: repeat;
+      height: 24px;
+      width: 100%;
+      bottom: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
     margin-bottom: 72px;
+
+    &::after {
+      background-image: url("../img/zigzags/zigzag-fill-desktop.svg");
+      height: 34px;
+      bottom: -1px;
+    }
   }
 }
 

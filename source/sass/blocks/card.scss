@@ -1,7 +1,21 @@
 .card {
+  display: flex;
+  flex-direction: column;
   background-color: $main-bg-color;
-  border-bottom: 1px solid $card-border-color;
+  border: 1px solid $card-border-color;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 659px;
+  }
 }
 
 .card__heading {
@@ -14,7 +28,45 @@
   @include text-size(13px, 30px);
 }
 
+.card__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 9vw;
+  margin-right: 9vw;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+}
+
 .card__price-value {
   @include text($text-color-primary, bold, normal, $primary-font);
   @include text-size(15px, 24px);
+}
+
+.card__info {
+  margin-left: 9vw;
+  margin-right: 9vw;
+  border-bottom: 1px solid $card-border-color;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+}
+
+.card__image {
+  order: -1;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 462px;
+  }
 }

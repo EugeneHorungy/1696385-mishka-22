@@ -2,20 +2,101 @@
   @include container();
   background-color: $main-bg-color;
   margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    @include container-max();
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop();
+    margin-bottom: 100px;
+  }
 }
 
 .production__wrapper {
-  border-top: 1px solid $card-border-color;
-  border-bottom: 1px solid $card-border-color;
+  border: 1px solid $card-border-color;
   padding-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 682px 1fr;
+    grid-template-rows: min-content min-content min-content;
+    padding-bottom: 0;
+  }
+}
+
+.production__heading-inner {
+  display: flex;
+  align-items: center;
+  padding-left: 34px;
+  padding-right: 20px;
+  margin-top: 18px;
+  margin-bottom: 22px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+  }
 }
 
 .production__heading {
   @include text($text-color-primary, bold, normal, $primary-font);
   @include text-size(17px, 24px);
+  margin-left: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .production__info {
   @include text($text-color-gray, normal, normal, $primary-font);
   @include text-size(13px, 24px);
+  margin-left: 34px;
+  margin-right: 22px;
+}
+
+.production__button {
+  margin-left: 34px;
+  margin-right: 34px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+    max-height: 52px;
+  }
+}
+
+.production__video {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    margin-right: 50px;
+  }
+}
+
+.production__video-control {
+  position: absolute;
+  background-image: url("../img/decor-images/video-control.svg");
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 76px;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.production__video-image {
+  width: 100%;
 }

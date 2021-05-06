@@ -6,23 +6,27 @@
   background-color: $main-bg-color;
 
   @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / -1;
     flex-direction: row;
-    border-top: 1px solid $gray;
+    flex-wrap: nowrap;
     background: $transparent;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    max-width: 40%;
+    grid-row: 1 / 2;
   }
 }
 
-.site-list__item:nth-child(3),
-.site-list__item:nth-child(4) {
-  display: none;
-
+.site-list__item:nth-child(1) {
   @media (min-width: $desktop-width) {
-    display: block;
+    border-right: 1px solid $gray;
+  }
+}
+
+.site-list__item:not(:first-child) {
+  @media (min-width: $desktop-width) {
+    padding-left: 34px;
   }
 }
 
@@ -34,7 +38,10 @@
   @media (min-width: $tablet-width) {
     border-bottom: none;
     padding-left: 0;
-    margin-right: 26px;
     font-size: 15px;
   }
+}
+
+.site-list__link:nth-child(1) {
+  margin-right: 16px;
 }
