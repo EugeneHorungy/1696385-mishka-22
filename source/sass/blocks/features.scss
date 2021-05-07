@@ -2,6 +2,11 @@
   padding: 26px 0;
   margin-bottom: 30px;
   background-color: $main-bg-color;
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop();
+    margin-bottom: 90px;
+  }
 }
 
 .features__wrapper {
@@ -35,7 +40,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 334px);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
     grid-auto-flow: column;
   }

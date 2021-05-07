@@ -93,14 +93,6 @@
   }
 }
 
-.products__item--interior {
-  background-color: $cian;
-}
-
-.products__item--toys {
-  background-color: $cian-darken;
-}
-
 .products__link {
   @include container();
   display: flex;
@@ -108,6 +100,7 @@
   justify-content: space-between;
   padding-top: 24px;
   padding-bottom: 31px;
+  z-index: 9;
 
   @media (min-width: $tablet-width) {
     padding-top: 23px;
@@ -118,6 +111,22 @@
     padding-top: 20px;
     padding-bottom: 39px;
   }
+}
+
+.products__link--interior {
+  background-color: $cian;
+}
+
+.products__link--interior:hover {
+  background-color: black;
+}
+
+.products__link--toys {
+  background-color: $cian-darken;
+}
+
+.products__link--toys:focus {
+  background-color: black;
 }
 
 .products__text {

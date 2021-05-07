@@ -10,6 +10,7 @@
   min-height: 52px;
   background-color: $transparent;
   border: 1px solid $border-color-gray;
+  cursor: pointer;
 
   &:last-child {
     transform: rotate(180deg);
@@ -19,4 +20,12 @@
     min-width: 89px;
     border: none;
   }
+}
+
+.slider-controls__button:hover path {
+  opacity: 0.6;
+}
+
+.slider-controls__button:active path {
+  opacity: 0.3;
 }

@@ -35,6 +35,15 @@
   @include text-size(17px, 24px);
   @include menu-link();
 
+  &:hover,
+  &:focus {
+    color: rgba($text-color-primary, 0.6);
+  }
+
+  &:active {
+    color: rgba($text-color-primary, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     border-bottom: none;
     padding-left: 0;
