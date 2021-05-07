@@ -56,6 +56,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include container-desktop();
     grid-template-columns: repeat(6, 16.6%);
   }
 }
@@ -188,6 +189,8 @@
 }
 
 .promotion__image {
+  width: 100%;
+  height: auto;
   align-self: center;
 
   @media (min-width: $tablet-width) {

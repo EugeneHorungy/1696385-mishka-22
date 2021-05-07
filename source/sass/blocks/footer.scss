@@ -19,6 +19,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop();
+  }
 }
 
 .footer__logo {

@@ -8,6 +8,16 @@
   background-color: $main-bg-color;
   border: 2px solid $gray-darken;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $gray-darken;
+    color: $text-color-white;
+  }
+
+  &:active {
+    color: rgba($text-color-white, 0.3);
+  }
 }
 
 .button--modal {
