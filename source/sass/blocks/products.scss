@@ -12,18 +12,43 @@
 }
 
 .products__wrapper {
-  background-color: $gray;
+  background-color: $gray-light;
   background-image: url("../img/background-images/products-bg.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
+  background-position: 50% 0;
+  background-size: auto 373px;
+  position: relative;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/background-images/products-bg-big.jpg");
+    background-size: auto 746px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/zigzags/zigzag-fill-tablet.svg");
+      background-repeat: repeat;
+      height: 24px;
+      width: 100%;
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-image: url("../img/zigzags/zigzag-fill-desktop.svg");
+      height: 34px;
+      bottom: 0;
+    }
+  }
 }
 
 .products__title {
   padding-top: 72px;
   padding-bottom: 120px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media (min-width: $tablet-width) {
     padding-top: 110px;
@@ -45,13 +70,26 @@
   }
 }
 
+.products__heading--newline {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .products__list {
   @include list-reset();
+  margin-top: -26px;
 
   @media (min-width: $tablet-width) {
     @include container-max();
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: -25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop();
+    margin-top: -56px;
   }
 }
 
@@ -65,14 +103,30 @@
 
 .products__link {
   @include container();
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    padding-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+    padding-bottom: 39px;
+  }
 }
 
 .products__text {
   @include text($text-color-white, bold, normal, $primary-font);
   @include text-size(19px, 24px);
   @include text-reset();
-  padding-top: 24px;
-  padding-bottom: 31px;
   max-width: 160px;
+
+  @media (min-width: $tablet-width) {
+    @include text-size(20px, 30px);
+  }
 }
