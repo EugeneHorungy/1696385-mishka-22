@@ -12,6 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include container-desktop();
     display: grid;
     grid-template-columns: repeat(6, 1fr);
   }

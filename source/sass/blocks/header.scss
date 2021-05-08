@@ -16,8 +16,8 @@
     display: grid;
     grid-template-columns: 1fr 348px;
     grid-template-rows: auto auto;
-    // flex-direction: row;
-    // justify-content: space-between;
+    position: relative;
+    z-index: 10;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,7 +27,6 @@
 
 .header__logo {
   @include menu-link();
-  // position: absolute;
   display: flex;
   justify-content: center;
   padding: 22px 0;
@@ -36,17 +35,22 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    // justify-content: flex-start;
     width: 113px;
-    // margin-right: auto;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    // right: 45%;
     grid-column: 1 / -1;
     justify-self: center;
   }
+}
+
+.header__logo:hover svg {
+  opacity: 0.6;
+}
+
+.header__logo:active svg {
+  opacity: 0.3;
 }
 
 .header__legend {
@@ -59,8 +63,5 @@
     grid-column: 2 / -1;
     grid-row: 2 / -1;
     justify-self: end;
-    // position: absolute;
-    // top: 100px;
-    // right: 46px;
   }
 }

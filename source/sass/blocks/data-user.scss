@@ -31,6 +31,12 @@
   }
 }
 
+.data-user__legend {
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+}
+
 .data-user__label {
   @include text($text-color-primary, bold, normal, $primary-font);
   @include text-size(17px, 18px);
@@ -45,9 +51,22 @@
 
 .data-user__input {
   @include input-text();
+  @include text($text-color-gray, normal, normal, $primary-font);
+  @include text-size(17px, 18px);
   padding-top: 17px;
   padding-bottom: 17px;
   margin-bottom: 22px;
+  outline: none;
+
+  &:hover {
+    border-color: $cian-2;
+    transition: all 0.4s;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $cian-2;
+  }
 
   &::placeholder {
     @include text-size(17px, 18px);
@@ -56,6 +75,7 @@
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
+    font-size: 19px;
 
     &::placeholder {
       @include text-size(19px, 18px);

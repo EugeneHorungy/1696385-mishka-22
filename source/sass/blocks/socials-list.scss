@@ -1,8 +1,26 @@
 .socials-list {
   @include list-reset();
   display: flex;
+  color: black;
   padding-top: 28px;
   padding-bottom: 18px;
+}
+
+.socials-list__link {
+  color: $black-2;
+}
+
+.socials-list__link:hover {
+  color: $cian-darken-2;
+}
+
+.socials-list__link:focus {
+  color: $cian-darken-2;
+}
+
+.socials-list__link:active {
+  color: $cian-darken-2;
+  opacity: 0.3;
 }
 
 .socials-list__item:not(:first-child) {

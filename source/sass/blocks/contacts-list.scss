@@ -28,4 +28,13 @@
   @include text($text-color-gray, normal, normal, $primary-font);
   @include text-size(14px, 30px);
   border-bottom: 1px solid $cian;
+
+  &:hover {
+    color: $text-color-accent-darken;
+  }
+
+  &:active {
+    color: $text-color-accent-darken;
+    border-bottom: 1px solid rgba($cian, 0.3);
+  }
 }
