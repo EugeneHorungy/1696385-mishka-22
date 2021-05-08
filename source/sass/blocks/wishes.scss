@@ -12,15 +12,30 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include container-desktop();
     grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 49px;
   }
 }
 
 .wishes__input {
+  @include text($text-color-primary, normal, normal, $primary-font);
+  @include text-size(17px, 18px);
+  outline: none;
   width: 100%;
   border: 2px solid $input-border-color;
   margin-top: 18px;
   padding: 17px;
+
+  &:hover {
+    border-color: $cian-2;
+    transition: all 0.4s;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $cian-2;
+  }
 
   &::placeholder {
     @include text-size(17px, 18px);
@@ -29,6 +44,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / -1;
+    font-size: 19px;
 
     &::placeholder {
       @include text-size(19px, 18px);

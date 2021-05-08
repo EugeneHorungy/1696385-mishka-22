@@ -101,6 +101,18 @@
   }
 }
 
+.order-list__radio-checkbox-label--radio:hover {
+  &::before {
+    border-color: $radio-checked-color;
+  }
+}
+
+.order-list__radio-checkbox-label--radio:active {
+  &::before {
+    border-color: $gray-black;
+  }
+}
+
 .order-list__radio-checkbox-label--checkbox {
   &::before {
     position: absolute;
@@ -141,5 +153,17 @@
       width: 31px;
       height: 22px;
     }
+  }
+}
+
+.order-list__radio-checkbox-label--checkbox:hover {
+  &::before {
+    border-color: $radio-checked-color;
+  }
+}
+
+.order-list__radio-checkbox-label--checkbox:active {
+  &::before {
+    border-color: rgba($gray-darken, 0.3);
   }
 }
