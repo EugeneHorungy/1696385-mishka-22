@@ -30,6 +30,19 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+
+    &:hover path {
+      fill: $cian-darken-2;
+    }
+
+    &:focus svg {
+      fill: $cian-darken-2;
+    }
+
+    &:active svg {
+      fill: $cian-darken-2;
+      opacity: 0.3;
+    }
   }
 }
 

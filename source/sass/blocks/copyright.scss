@@ -10,3 +10,20 @@
   @include text-reset();
   margin-right: 28px;
 }
+
+.copyright__link {
+  color: $cian-darken-2;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
