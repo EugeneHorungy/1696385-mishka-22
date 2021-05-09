@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   background-color: $main-bg-color;
-  border: 1px solid $card-border-color;
   margin-bottom: 30px;
+  border: 1px solid $card-border-color;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -13,19 +13,48 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     min-height: 659px;
   }
 }
 
+.card:hover .card__inner {
+  box-shadow: 0 6px 10px rgba($basic-black, 0.1);
+  transition: all 0.3s;
+}
+
+.card:active .card__inner {
+  box-shadow: 0 3px 5px rgba($basic-black, 0.1);
+  transition: all 0.3s;
+}
+
 .card__heading {
   @include text($text-color-primary, bold, normal, $primary-font);
   @include text-size(17px, 24px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.card__heading-link:hover .card__heading {
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.card__heading-link:active .card__heading {
+  opacity: 0.3;
+  transition: all 0.3s;
 }
 
 .card__parameters {
   @include text($text-color-gray, normal, normal, $primary-font);
   @include text-size(13px, 30px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
 }
 
 .card__price {
@@ -34,30 +63,39 @@
   justify-content: space-between;
   margin-left: 9vw;
   margin-right: 9vw;
+  border-top: 1px solid $card-border-color;
 
   @media (min-width: $tablet-width) {
     margin-left: 34px;
     margin-right: 34px;
+    align-self: end;
   }
 }
 
 .card__price-value {
   @include text($text-color-primary, bold, normal, $primary-font);
   @include text-size(15px, 24px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .card__info {
   margin-left: 9vw;
   margin-right: 9vw;
-  border-bottom: 1px solid $card-border-color;
 
   @media (min-width: $tablet-width) {
     margin-left: 34px;
     margin-right: 34px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: auto;
+  }
 }
 
-.card__image {
+.card__image-link {
   order: -1;
   width: 100%;
 
@@ -67,6 +105,37 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.card__image {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
     min-height: 462px;
   }
+}
+
+.card__inner {
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-content: space-between;
+    min-height: 197px;
+  }
+}
+
+.card__button-to-cart:hover path {
+  fill: $cian;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.card__button-to-cart:active path {
+  fill: $cian;
+  opacity: 0.3;
+  transition: all 0.3s;
 }

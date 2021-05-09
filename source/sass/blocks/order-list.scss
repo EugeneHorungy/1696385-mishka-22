@@ -104,12 +104,14 @@
 .order-list__radio-checkbox-label--radio:hover {
   &::before {
     border-color: $radio-checked-color;
+    transition: all 0.3s;
   }
 }
 
 .order-list__radio-checkbox-label--radio:active {
   &::before {
     border-color: $gray-black;
+    transition: all 0.3s;
   }
 }
 
@@ -159,11 +161,13 @@
 .order-list__radio-checkbox-label--checkbox:hover {
   &::before {
     border-color: $radio-checked-color;
+    transition: all 0.3s;
   }
 }
 
 .order-list__radio-checkbox-label--checkbox:active {
   &::before {
     border-color: rgba($gray-darken, 0.3);
+    transition: all 0.3s;
   }
 }
