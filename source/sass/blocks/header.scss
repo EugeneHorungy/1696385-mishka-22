@@ -35,21 +35,25 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    width: 113px;
+    justify-self: start;
+    justify-content: flex-start;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
     justify-self: center;
+    align-self: center;
+    justify-content: center;
+    padding: 0;
   }
 }
 
-.header__logo:hover svg {
+.header__logo:hover .logo__img {
   opacity: 0.6;
 }
 
-.header__logo:active svg {
+.header__logo:active .logo__img {
   opacity: 0.3;
 }
 
