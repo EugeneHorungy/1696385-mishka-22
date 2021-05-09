@@ -13,6 +13,7 @@
   &:focus {
     background-color: $gray-darken;
     color: $text-color-white;
+    transition: all 0.3s;
   }
 
   &:active {

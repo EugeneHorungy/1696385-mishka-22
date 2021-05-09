@@ -83,6 +83,7 @@
 .contacts-user__input:hover + .contacts-user__icon path {
   fill: $cian-2;
   transition: all 0.4s;
+  opacity: 1;
 }
 
 .contacts-user__icon {
