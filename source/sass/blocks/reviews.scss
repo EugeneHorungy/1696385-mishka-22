@@ -48,6 +48,10 @@
     background-image: url("../img/background-images/tablecloth.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-images/tablecloth@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {

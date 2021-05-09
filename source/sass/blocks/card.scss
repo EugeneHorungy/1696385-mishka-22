@@ -111,6 +111,7 @@
 
 .card__image {
   width: 100%;
+  display: flex;
 
   @media (min-width: $desktop-width) {
     min-height: 462px;
