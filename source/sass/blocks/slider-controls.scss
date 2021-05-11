@@ -18,15 +18,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 89px;
+    min-width: 87px;
     border: none;
   }
 }
 
-.slider-controls__button:hover path {
+.slider-controls__button:hover .slider-controls__icon {
   opacity: 0.6;
 }
 
-.slider-controls__button:active path {
+.slider-controls__button:active .slider-controls__icon {
   opacity: 0.3;
 }

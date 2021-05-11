@@ -15,6 +15,10 @@
   @media (min-width: $tablet-width) {
     @include text-size(17px, 30px);
     margin-bottom: 60px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 44px;
+    }
   }
 }
 
@@ -26,6 +30,10 @@
   @media (min-width: $tablet-width) {
     @include text-size(18px, 24px);
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews-slider__nick {
@@ -34,8 +42,4 @@
   @include text-reset();
   margin-top: 6px;
   margin-bottom: 32px;
-
-  @media (min-width: $tablet-width) {
-    @include text-size(18px, 24px);
-  }
 }

@@ -2,8 +2,8 @@
   background-color: $gray-lighten;
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 24px;
+    padding-bottom: 34px;
   }
 }
 
@@ -27,26 +27,29 @@
 
 .footer__logo {
   display: none;
+  color: $basic-black;
+
+  &:hover {
+    color: $cian-darken-2;
+    transition: all 0.2s;
+  }
+
+  &:focus {
+    color: $cian-darken-2;
+  }
+
+  &:active svg {
+    color: $cian-darken-2;
+    opacity: 0.3;
+    transition: all 0.2s;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
-
-    &:hover path {
-      fill: $cian-darken-2;
-    }
-
-    &:focus svg {
-      fill: $cian-darken-2;
-    }
-
-    &:active svg {
-      fill: $cian-darken-2;
-      opacity: 0.3;
-    }
   }
 }
 
 .footer__copyright {
   padding-top: 24px;
-  padding-bottom: 28px;
+  padding-bottom: 20px;
 }

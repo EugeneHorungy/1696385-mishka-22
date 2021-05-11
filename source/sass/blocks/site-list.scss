@@ -19,8 +19,14 @@
 }
 
 .site-list__item:nth-child(1) {
+  @media (min-width: $tablet-width) {
+    margin-right: 36px;
+  }
+
   @media (min-width: $desktop-width) {
     border-right: 1px solid $gray;
+    padding-right: 35px;
+    margin-right: 0;
   }
 }
 
@@ -46,11 +52,19 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    padding-left: 0;
+    padding: 20px 0 34px 0;
     font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    padding-top: 34px;
+    padding-bottom: 27px;
   }
 }
 
-.site-list__link:nth-child(1) {
-  margin-right: 16px;
+.site-list--js {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }

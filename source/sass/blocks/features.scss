@@ -1,11 +1,16 @@
 .features {
-  padding: 26px 0;
-  margin-bottom: 30px;
+  padding: 23px 0;
+  margin-bottom: 32px;
   background-color: $main-bg-color;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    margin-bottom: 28px;
+  }
 
   @media (min-width: $desktop-width) {
     @include container-desktop();
-    margin-bottom: 90px;
+    margin-bottom: 58px;
   }
 }
 
@@ -17,7 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 175px;
+    margin-left: 126px;
   }
 }
 
@@ -28,10 +33,12 @@
 
   @media (min-width: $tablet-width) {
     @include text-size(43px, 50px);
+    margin-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
     @include text-size(53px, 57px);
+    margin-bottom: 13px;
   }
 }
 
@@ -121,5 +128,6 @@
 
   @media (min-width: $tablet-width) {
     @include text-size(20px, 22px);
+    margin-bottom: 28px;
   }
 }

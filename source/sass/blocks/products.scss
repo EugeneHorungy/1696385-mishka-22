@@ -1,13 +1,15 @@
 .products {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     margin-top: -78px;
     margin-bottom: 40px;
+    height: 756px;
+    border-top: 1px solid $gray;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 54px;
+    margin-bottom: 60px;
   }
 }
 
@@ -15,7 +17,7 @@
   background-color: $gray-light;
   background-image: url("../img/background-images/products-bg.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50% -19px;
   background-size: auto 373px;
   position: relative;
   z-index: 1;
@@ -25,8 +27,13 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 756px;
     background-image: url("../img/background-images/products-bg-big.jpg");
     background-size: auto 746px;
+    background-position: 50% -2px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-images/products-bg-big@2x.jpg");
@@ -45,22 +52,21 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      background-image: url("../img/zigzags/zigzag-fill-desktop.svg");
+      background-image: url("../img/zigzags/zigzag-fill-desktop2.svg");
       height: 34px;
-      bottom: 0;
+      bottom: -5px;
     }
   }
 }
 
 .products__title {
-  padding-top: 72px;
+  padding-top: 49px;
   padding-bottom: 120px;
   padding-left: 30px;
   padding-right: 30px;
 
   @media (min-width: $tablet-width) {
     padding-top: 110px;
-    padding-bottom: 372px;
   }
 }
 
@@ -71,10 +77,12 @@
 
   @media (min-width: $tablet-width) {
     @include text-size(43px, 50px);
+    margin-top: 44px;
   }
 
   @media (min-width: $desktop-width) {
     @include text-size(53px, 57px);
+    margin-top: 46px;
   }
 }
 
@@ -86,17 +94,21 @@
 
 .products__list {
   @include list-reset();
-  margin-top: -26px;
+  margin-top: -23px;
 
   @media (min-width: $tablet-width) {
     @include container-max();
+    align-self: stretch;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: -25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    @include container-desktop();
+    @include container-max();
     margin-top: -56px;
   }
 }
@@ -106,23 +118,25 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 31px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  &--toys {
+    background-color: $cian-darken;
+  }
 
   @media (min-width: $tablet-width) {
-    padding-top: 23px;
-    padding-bottom: 36px;
+    padding: 25px 30px 38px 36px;
 
     &:hover {
-      margin-top: -5px;
+      margin-top: -6px;
       transition: all 0.2s;
       padding-bottom: 44px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 20px;
-    padding-bottom: 39px;
+    min-width: 525px;
   }
 }
 
@@ -139,20 +153,16 @@
   background-color: $cian-3;
 }
 
-.products__link--interior:hover path {
+.products__link--interior:hover .products__icon {
   opacity: 0.7;
 }
 
-.products__link--interior:focus path {
+.products__link--interior:focus .products__icon {
   opacity: 0.7;
 }
 
-.products__link--interior:active path {
+.products__link--interior:active .products__icon {
   opacity: 0.3;
-}
-
-.products__link--toys {
-  background-color: $cian-darken;
 }
 
 .products__link--toys:hover,
@@ -164,15 +174,15 @@
   background-color: $cian-darken-2;
 }
 
-.products__link--toys:hover path {
+.products__link--toys:hover .products__icon {
   opacity: 0.7;
 }
 
-.products__link--toys:focus path {
+.products__link--toys:focus .products__icon {
   opacity: 0.7;
 }
 
-.products__link--toys:active path {
+.products__link--toys:active .products__icon {
   opacity: 0.3;
 }
 
@@ -181,8 +191,23 @@
   @include text-size(19px, 24px);
   @include text-reset();
   max-width: 160px;
+  margin-bottom: 6px;
 
   @media (min-width: $tablet-width) {
     @include text-size(20px, 30px);
+  }
+}
+
+.products__icon--interior {
+  margin-right: 6px;
+  margin-top: 6px;
+}
+
+.products__icon--toys {
+  margin-top: 6px;
+  margin-right: -3px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 2px;
   }
 }
