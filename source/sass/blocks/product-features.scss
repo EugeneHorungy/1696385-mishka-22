@@ -1,7 +1,6 @@
 .product-features {
   @include text($text-color-gray, normal, normal, $primary-font);
   @include text-size(15px, 20px);
-  margin-bottom: 30px;
   background-color: $main-bg-color;
 }
 
@@ -9,11 +8,25 @@
   display: flex;
   padding: 10px 0;
   border-bottom: 1px solid $border-color-gray;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 8px;
+    padding-bottom: 12px;
+  }
 }
 
 .product-features__item {
   @include text-reset();
   width: 37%;
+
+  @media (min-width: $tablet-width) {
+    width: 33.3%;
+  }
 }
 
 .product-features__description {

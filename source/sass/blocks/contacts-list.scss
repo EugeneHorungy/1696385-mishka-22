@@ -2,6 +2,10 @@
   @include text($text-color-gray, normal, normal, $primary-font);
   @include text-size(14px, 30px);
   background-color: $main-bg-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .contacts-list__wrapper {
@@ -13,11 +17,19 @@
 
   &:last-child {
     margin-bottom: 64px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
   }
 }
 
 .contacts-list__item {
   margin-right: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 26px;
+  }
 }
 
 .contacts-list__description {
@@ -28,6 +40,15 @@
   @include text($text-color-gray, normal, normal, $primary-font);
   @include text-size(14px, 30px);
   border-bottom: 1px solid $cian;
+  padding-bottom: 2px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 8px;
+  }
 
   &:hover {
     color: $text-color-accent-darken;

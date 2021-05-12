@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 28px;
+  padding-top: 20px;
   background-color: $main-bg-color;
 
   @media (min-width: $tablet-width) {
@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: repeat(6, 175px);
     grid-template-rows: 402px 52px;
-    padding-bottom: 106px;
+    margin-bottom: 108px;
     margin-top: 71px;
   }
 }
@@ -22,6 +22,11 @@
 
   @media (min-width: $tablet-width) {
     @include container-max();
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    margin-left: 0;
   }
 }
 
@@ -39,6 +44,7 @@
   @media (min-width: $tablet-width) {
     @include text-size(43px, 50px);
     position: relative;
+    margin-top: 49px;
     margin-bottom: 50px;
 
     &::after {
@@ -49,16 +55,19 @@
       background-position: 0 0;
       width: 47px;
       height: 81px;
-      right: 0;
+      top: -23px;
+      right: 3px;
     }
   }
 
   @media (min-width: $desktop-width) {
     @include text-size(53px, 57px);
-    margin-top: 100px;
+    margin-top: 79px;
+    margin-bottom: 35px;
 
     &::after {
-      left: -124px;
+      top: -17px;
+      left: -112px;
     }
   }
 }
@@ -76,9 +85,14 @@
 }
 
 .contacts__feedback {
-  margin-top: 35px;
+  margin-top: 39px;
   margin-bottom: 37px;
   min-width: 230px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+    margin-bottom: 58px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
