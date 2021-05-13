@@ -146,13 +146,17 @@
   }
 }
 
-.card__button-to-cart:hover path {
+.card__icon-cart {
+  opacity: 0.2;
+}
+
+.card__button-to-cart:hover .card__icon-cart {
   fill: $cian;
   opacity: 1;
   transition: all 0.3s;
 }
 
-.card__button-to-cart:active path {
+.card__button-to-cart:active .card__icon-cart {
   fill: $cian;
   opacity: 0.3;
   transition: all 0.3s;
