@@ -7,10 +7,12 @@ $cian-2: #62d1ba;
 $cian-3: #59d5bc;
 $cian-darken: #56c3b2;
 $cian-darken-2: #46c1ae;
+$gray-normal: #c6c6c6;
 $gray-darken: #444444;
 $gray-lighten: #f1f1f1;
 $gray: #ececec;
 $gray-light: #f9f9f9;
+$gray-shadow: rgba(0, 1, 1, 0.25);
 $gray-black: rgba(0, 0, 0, 0.3);
 $transparent: transparent;
 // Semantic colors
@@ -28,7 +30,7 @@ $radio-checkbox-border-color: $gray-darken;
 $radio-checked-color: $cian-2;
 $border-color-gray: $gray;
 $card-border-color: $gray;
-$modal-input-color: $gray;
+$modal-input-color: $gray-darken;
 $modal-input-current-color: $cian;
 // Fonts
 $primary-font: "Open Sans", "Arial", sans-serif;
