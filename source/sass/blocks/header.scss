@@ -26,11 +26,14 @@
 }
 
 .header__logo {
-  @include menu-link();
   display: flex;
   justify-content: center;
   padding: 22px 0 19px 0;
-  width: 100%;
+  width: 86px;
+
+  @media (max-width: $mobile-width-only) {
+    margin: auto;
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
@@ -38,6 +41,8 @@
     justify-self: start;
     justify-content: flex-start;
     border-bottom: none;
+    width: 113px;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +52,7 @@
     justify-content: center;
     padding: 0;
     margin-bottom: 14px;
+    width: 149px;
   }
 }
 

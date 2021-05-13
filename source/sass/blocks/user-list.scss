@@ -14,6 +14,12 @@
   @include text-size(17px, 24px);
   @include user-menu-link();
 
+  &--cart {
+    @media (max-width: $mobile-width-only) {
+      border-bottom: 0;
+    }
+  }
+
   &:hover,
   &:focus {
     color: rgba($text-color-primary, 0.6);

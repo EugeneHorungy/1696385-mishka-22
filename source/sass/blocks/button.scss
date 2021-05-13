@@ -9,6 +9,10 @@
   border: 2px solid $gray-darken;
   cursor: pointer;
 
+  &--form {
+    font-size: 17px;
+  }
+
   &:hover,
   &:focus {
     background-color: $gray-darken;
