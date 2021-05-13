@@ -17,6 +17,7 @@
 .select-form__label:hover {
   border-color: rgba($modal-input-color, 0.3);
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .select-form__input:checked + .select-form__label {

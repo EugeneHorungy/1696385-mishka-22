@@ -19,6 +19,11 @@
 
 .modal-cart__wrapper {
   @include container();
+
+  @media (min-width: $tablet-width) {
+    padding-left: 98px;
+    padding-right: 98px;
+  }
 }
 
 .modal-cart__heading {
