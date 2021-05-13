@@ -7,13 +7,14 @@
     @include container-max();
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 40px;
+    margin-top: 31px;
     margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
     @include container-desktop();
     grid-template-columns: repeat(6, 1fr);
+    padding-top: 31px;
     margin-bottom: 49px;
   }
 }
@@ -25,7 +26,8 @@
   width: 100%;
   border: 2px solid $input-border-color;
   margin-top: 18px;
-  padding: 17px;
+  margin-bottom: 0;
+  padding: 16px;
 
   &:hover {
     border-color: $cian-2;
@@ -57,7 +59,7 @@
 }
 
 .wishes__label {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     margin-top: 40px;

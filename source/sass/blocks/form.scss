@@ -1,6 +1,10 @@
 .form {
   background-color: $main-bg-color;
   padding-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 33px;
+  }
 }
 
 .form__item {
@@ -8,10 +12,16 @@
   margin-bottom: 20px;
   border: none;
 
+  &--whishes {
+    margin-bottom: 16px;
+  }
+
   @media (min-width: $tablet-width) {
+    margin-bottom: 8px;
+
     &--color {
       background-color: $gray-bg-color;
-      padding-top: 65px;
+      padding-top: 67px;
     }
   }
 }
@@ -29,10 +39,6 @@
   }
 }
 
-.form__item--whishes {
-  margin-bottom: 0;
-}
-
 .form__legend {
   @include text($cian, bold, normal, $primary-font);
   @include text-size(17px, 16px);
@@ -41,10 +47,9 @@
   display: flex;
   align-items: center;
   width: 100%;
-  margin-bottom: 28px;
 
   &--type {
-    margin-bottom: 34px;
+    margin-bottom: 35px;
   }
 
   &--color {
@@ -67,7 +72,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 46px;
+    margin-left: 62px;
   }
 }
 
@@ -90,13 +95,13 @@
   @include text($text-color-gray, normal, normal, $primary-font);
   @include text-size(14px, 16px);
   @include text-reset();
-  margin-bottom: 18px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     @include text-size(17px, 30px);
     grid-column: 2 / -1;
     justify-self: end;
-    margin-top: 16px;
+    margin-top: 11px;
   }
 
   @media (min-width: $desktop-width) {

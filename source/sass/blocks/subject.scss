@@ -1,10 +1,10 @@
 .subject {
-  margin-bottom: 30px;
+  margin-bottom: 17px;
   background-color: $gray-bg-color;
 
   @media (min-width: $tablet-width) {
     margin-top: -78px;
-    margin-bottom: 44px;
+    margin-bottom: 55px;
     position: relative;
     z-index: -1;
     border-top: 1px solid $gray;
@@ -21,10 +21,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 72px;
+    margin-bottom: 82px;
 
     &::after {
-      background-image: url("../img/zigzags/zigzag-fill-desktop.svg");
+      background-image: url("../img/zigzags/zigzag-fill-desktop3.svg");
       height: 34px;
       bottom: -1px;
     }
@@ -33,14 +33,15 @@
 
 .subject__wrapper {
   @include container();
-  padding: 52px 22px;
+  padding: 50px 22px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 68px;
-    padding-bottom: 62px;
+    padding-top: 64px;
+    padding-bottom: 51px;
 
     @media (min-width: $desktop-width) {
-      padding-bottom: 96px;
+      padding-top: 56px;
+      padding-bottom: 68px;
     }
   }
 }

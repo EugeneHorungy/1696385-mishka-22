@@ -7,11 +7,11 @@
     background-color: $gray-bg-color;
 
     &--phone {
-      padding-top: 64px;
+      padding-top: 42px;
     }
 
     &--email {
-      padding-bottom: 50px;
+      padding-bottom: 34px;
     }
   }
 }
@@ -34,7 +34,11 @@
 }
 
 .contacts-user__label {
-  margin-bottom: 6px;
+  margin-bottom: 2px;
+
+  &--email {
+    margin-bottom: 4px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 24px;
@@ -46,8 +50,8 @@
   @include text($text-color-gray, normal, normal, $primary-font);
   @include text-size(17px, 18px);
   padding-top: 16px;
-  padding-bottom: 18px;
-  margin-bottom: 34px;
+  padding-bottom: 16px;
+  margin-bottom: 35px;
   background-color: $transparent;
   outline: none;
 
@@ -68,6 +72,10 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / -1;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    padding-left: 17px;
+    margin-bottom: 16px;
     font-size: 19px;
 
     &::placeholder {
@@ -80,7 +88,7 @@
   }
 }
 
-.contacts-user__input:hover + .contacts-user__icon path {
+.contacts-user__input:hover + .contacts-user__icon {
   fill: $cian-2;
   transition: all 0.4s;
   opacity: 1;
@@ -88,24 +96,33 @@
 
 .contacts-user__icon {
   position: absolute;
-  top: 30px;
-  right: 8px;
+  opacity: 0.3;
+
+  &--phone {
+    top: 30px;
+    right: 8px;
+  }
+
+  &--email {
+    top: 36px;
+    right: 3px;
+  }
 
   @media (min-width: $tablet-width) {
     &--phone {
       top: 20px;
-      right: 60px;
+      right: 76px;
     }
 
     &--email {
-      top: 20px;
-      right: 60px;
+      top: 24px;
+      right: 72px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &--phone {
-      right: 230px;
+      right: 233px;
     }
 
     &--email {

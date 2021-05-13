@@ -19,6 +19,10 @@
 }
 
 .site-list__item:nth-child(1) {
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $gray;
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: 36px;
   }

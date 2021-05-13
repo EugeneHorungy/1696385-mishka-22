@@ -1,11 +1,11 @@
 .products {
   margin-bottom: 31px;
+  border-top: 1px solid $gray;
 
   @media (min-width: $tablet-width) {
     margin-top: -78px;
     margin-bottom: 40px;
     height: 756px;
-    border-top: 1px solid $gray;
   }
 
   @media (min-width: $desktop-width) {
