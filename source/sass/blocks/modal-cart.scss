@@ -1,14 +1,20 @@
 .modal-cart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 566px;
+  display: none;
+  z-index: 7;
   background-color: $main-bg-color;
   padding-bottom: 46px;
-}
-
-.modal-cart--closed {
-  display: none;
+  border-top: 1px solid $gray-normal;
+  box-shadow: 0 5px 10px $gray-shadow;
+  transform: translate(-50%, -50%);
 }
 
 .modal-cart--opened {
-  display: fixed;
+  display: block;
 }
 
 .modal-cart__wrapper {
@@ -18,4 +24,10 @@
 .modal-cart__heading {
   @include text($text-color-primary, bold, normal, $primary-font);
   @include text-size(25px, 30px);
+  text-align: center;
+  margin-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    @include text-size(30px, 57px);
+  }
 }

@@ -24,9 +24,3 @@
     color: rgba($text-color-white, 0.3);
   }
 }
-
-.button--modal {
-  @include text($text-color-white, bold, normal, $primary-font);
-  background-color: $cian;
-  border: none;
-}
