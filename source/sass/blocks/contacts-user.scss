@@ -108,6 +108,12 @@
     right: 3px;
   }
 
+  &:hover {
+    fill: $cian-2;
+    transition: all 0.4s;
+    opacity: 1;
+  }
+
   @media (min-width: $tablet-width) {
     &--phone {
       top: 20px;

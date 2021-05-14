@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr auto;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,9 +33,12 @@
 .card__heading {
   @include text($text-color-primary, bold, normal, $primary-font);
   @include text-size(17px, 24px);
+  @include text-reset();
+  margin-top: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    margin-top: 27px;
   }
 }
 
@@ -51,9 +55,15 @@
 .card__parameters {
   @include text($text-color-gray, normal, normal, $primary-font);
   @include text-size(13px, 30px);
+  margin-top: 5px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -61,14 +71,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 9vw;
-  margin-right: 9vw;
+  margin-left: 8.3vw;
+  margin-right: 8.3vw;
+  padding-top: 8px;
+  padding-bottom: 10px;
   border-top: 1px solid $card-border-color;
 
   @media (min-width: $tablet-width) {
     margin-left: 34px;
     margin-right: 34px;
     align-self: end;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 28px;
+    }
   }
 }
 
@@ -82,8 +98,8 @@
 }
 
 .card__info {
-  margin-left: 9vw;
-  margin-right: 9vw;
+  margin-left: 8.3vw;
+  margin-right: 8.3vw;
 
   @media (min-width: $tablet-width) {
     margin-left: 34px;
@@ -92,6 +108,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: auto;
+    margin-left: 28px;
   }
 }
 
@@ -129,13 +146,17 @@
   }
 }
 
-.card__button-to-cart:hover path {
+.card__icon-cart {
+  opacity: 0.2;
+}
+
+.card__button-to-cart:hover .card__icon-cart {
   fill: $cian;
   opacity: 1;
   transition: all 0.3s;
 }
 
-.card__button-to-cart:active path {
+.card__button-to-cart:active .card__icon-cart {
   fill: $cian;
   opacity: 0.3;
   transition: all 0.3s;

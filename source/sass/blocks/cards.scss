@@ -1,5 +1,6 @@
 .cards {
   @include container();
+  padding-top: 15px;
   background-color: $main-bg-color;
 
   @media (min-width: $tablet-width) {

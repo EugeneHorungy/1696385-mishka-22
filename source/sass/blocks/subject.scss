@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -78px;
-    margin-bottom: 55px;
+    margin-bottom: 68px;
     position: relative;
     z-index: -1;
     border-top: 1px solid $gray;
@@ -21,7 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
+    margin-bottom: 112px;
 
     &::after {
       background-image: url("../img/zigzags/zigzag-fill-desktop3.svg");
