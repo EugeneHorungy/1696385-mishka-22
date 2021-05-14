@@ -32,7 +32,7 @@ const styles = () => {
 
 exports.styles = styles;
 
-// Html
+// html
 
 const html = () => {
   return gulp.src("source/*.html")
