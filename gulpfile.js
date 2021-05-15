@@ -17,20 +17,36 @@ const sync = require("browser-sync").create();
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer(),
-      csso()
-    ]))
-    .pipe(rename("style.min.css"))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
-    .pipe(sync.stream());
+  .pipe(plumber())
+  .pipe(sourcemap.init())
+  .pipe(sass())
+  .pipe(postcss([
+    autoprefixer(),
+    csso()
+  ]))
+  .pipe(rename("style.min.css"))
+  .pipe(sourcemap.write("."))
+  .pipe(gulp.dest("build/css"))
+  .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+const stylesnomin = () => {
+  return gulp.src("source/sass/style.scss")
+  .pipe(plumber())
+  .pipe(sourcemap.init())
+  .pipe(sass())
+  .pipe(postcss([
+    autoprefixer()
+  ]))
+  .pipe(rename("style.css"))
+  .pipe(sourcemap.write("."))
+  .pipe(gulp.dest("build/css"))
+  .pipe(sync.stream());
+}
+
+exports.stylesnomin = stylesnomin;
 
 // html
 
@@ -152,6 +168,7 @@ const build = gulp.series(
   optimizeImages,
   gulp.parallel(
     styles,
+    stylesnomin,
     html,
     scripts,
     createWebp
@@ -166,6 +183,7 @@ exports.default = gulp.series(
   copyImages,
   gulp.parallel(
     styles,
+    stylesnomin,
     html,
     scripts,
     createWebp
