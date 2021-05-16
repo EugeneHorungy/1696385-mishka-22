@@ -48,7 +48,7 @@ const stylesnomin = () => {
 
 exports.stylesnomin = stylesnomin;
 
-// html
+// Html
 
 const html = () => {
   return gulp.src("source/*.html")
