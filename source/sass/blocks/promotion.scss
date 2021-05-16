@@ -32,13 +32,7 @@
     margin-bottom: 68px;
 
     &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/zigzags/zigzag-big.svg");
-      background-repeat: repeat;
-      height: 23px;
-      width: 100%;
-      bottom: 0;
+      display: none;
     }
   }
 }
@@ -59,6 +53,16 @@
   @media (min-width: $desktop-width) {
     @include container-desktop();
     grid-template-columns: repeat(6, 175px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/zigzags/zigzag-big.svg");
+      background-repeat: repeat;
+      height: 23px;
+      width: 1050px;
+      bottom: 0;
+    }
   }
 }
 
